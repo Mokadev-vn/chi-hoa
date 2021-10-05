@@ -1,6 +1,6 @@
 body {
     font-family: "Titillium Web", sans-serif;
-    background: #191b28;
+    /* background-image: url(./Gift.png); */
 }
 
 .roulette-wrapper {
@@ -60,3 +60,226 @@ body {
 * {
     box-sizing: border-box;
 }
+
+
+.swal2-title{
+    line-height: 60px !important;
+    color: white !important;
+    font-size: 38px !important;
+    font-weight: bold !important;
+}
+
+.swal2-popup {
+    /* background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-image: url(https://i.imgur.com/42ozHxo.png) !important; */
+    background-color: #f4b603 !important;
+    width: 500px !important;
+    height: 300px !important;
+}
+
+
+.button-start .box-button {
+    background: #007bff;
+    color: yellow;
+    box-shadow: 0 0 5px #f4b603, 0 0 25px #f4b603, 0 0 50px #f4b603, 0 0 200px #f4b603;
+    cursor: pointer;
+}
+.button-start .box-button:hover {
+    background: #99c4f1;
+    color: rgb(255, 255, 255);
+}
+.button-start .box-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ffd713;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.button-start .box-button:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+.button-start .box-button span {
+    position: absolute;
+    display: block;
+}
+.button-start .box-button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffd713);
+    animation: animate1 1s linear infinite;
+}
+
+.button-start .box-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffd713);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.button-start .box-button span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffd713);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+.button-start .box-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffd713);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+
+
+.button-end .box-button-end {
+    background: #dc3545;
+    color: yellow;
+    box-shadow: 0 0 5px #f4b603, 0 0 25px #f4b603, 0 0 50px #f4b603, 0 0 200px #f4b603;
+    cursor: pointer;
+}
+
+.button-end .box-button-end {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ffd713;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.button-end .box-button-end:hover{
+    background: #ec9ca4;
+    color: rgb(255, 255, 255);
+}
+
+.button-end .box-button-end:nth-child(1) {
+    /* filter: hue-rotate(13deg) */
+}
+.button-end .box-button-end:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+.button-end .box-button-end span {
+    position: absolute;
+    display: block;
+}
+.button-end .box-button-end span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffd713);
+    animation: animate1 1s linear infinite;
+}
+
+.button-end .box-button-end span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffd713);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.button-end .box-button-end span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffd713);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+.button-end .box-button-end span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffd713);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
